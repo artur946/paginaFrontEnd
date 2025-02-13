@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",serif;
+}
+.cabecalho {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* background-color: #333; */
+    position: relative;
+}
+.logo {
+    width: 80px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-left: 3rem;
+}
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px;
+}
+.menu ul li a:hover {
+    color: #f0a500;
+}
+/* Estilização dos links no lado direito */
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.auth-links a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+/* Estilização específica do botão "Cadastrar" */
+.cadastrar {
+    background-color: #8e2424;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.cadastrar:hover {
+    background-color: #d18c00;
+}
+/* Estilização do "Sobre Nós" */
+.sobre-nos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+.sobre-nos h3 {
+    color: #8e2424;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sobre-nos h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+}
+.sobre-nos p {
+    color: #666;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+/* Estilização das métricas */
+.metricas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+.card h1 {
+    color: #8e2424;
+    font-size: 40px;
+    font-weight: bold;
+}
+.card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+.card p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Estilização da seção "Talentos" */
+.talentos {
+    text-align: center;
+    padding: 50px 20px;
+}
+.talentos h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.talentos p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.talentos img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+/* Estilização das vagas */
+.vagas {
+    background-color: #f9f9f9;
+    padding: 40px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.vagas h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.vaga {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vaga h4 {
+    font-size: 18px;
+    color: #333;
+}
+.vaga p {
+    font-size: 16px;
+    color: #666;
+}
+.vaga span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+/*Depimentos*/
+.depoimento {
+    background: #fef7f7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.depoimento h3 {
+    color: #8e2424;
+}
+.depoimento p {
+    font-size: 18px;
+    color: #333;
+}
+.usuario {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.inscricao {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.inscricao input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inscricao button {
+    padding: 10px 15px;
+    background: #8e2424;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* Responsividade */
+    @media (max-width: 1024px) {
+        .vagas, .depoimento, .inscricao {
+            max-width: 95%;
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .vagas, .depoimento, .inscricao {
+            max-width: 90%;
+            padding: 15px;
+        }
+        .inscricao input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .inscricao button {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 18px;
+        }
+        .vaga h3 {
+            font-size: 16px;
+        }
+        .depoimento p {
+            font-size: 16px;
+        }
+        .inscricao input, .inscricao button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
